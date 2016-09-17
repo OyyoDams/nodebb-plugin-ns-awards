@@ -43,7 +43,8 @@
                     bodyShort: util.format('Congratulations! You have received "%s" award.', award.name),
                     nid      : 'aid:' + awardId + ':uids:' + recipients.join('-'),
                     aid      : awardId,
-                    from     : fromUid
+                    from     : fromUid,
+                    path     : "/awards"
                 }, callback);
             },
             function (notification, callback) {
