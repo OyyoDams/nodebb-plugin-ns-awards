@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-ns-awards-next",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "System for rewarding forum users. It allows admin to define set of awards that could be granted to users for special accomplishments.",
   "main": "./plugin/index.js",
   "scripts": {
