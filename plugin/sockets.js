@@ -83,7 +83,7 @@
         controller.getApiTokens(callback);
     };
 
-    Sockets.getAwards = function (socket, callback) {
+    Sockets.getAwards = function (socket, payload, callback) {
         controller.getAwards(function (error, awards) {
             if (error) {
                 return callback(error);
