@@ -1,8 +1,8 @@
 {
-  "id": "nodebb-plugin-ns-awards",
+  "id": "nodebb-plugin-ns-awards-recalbox",
   "name": "NodeBB Awards",
   "description": "A system for rewarding forum users. The plugin allows admin to define set of awards that could be granted to users for special accomplishments.",
-  "url": "https://github.com/NicolasSiver/nodebb-plugin-ns-awards",
+  "url": "https://github.com/OyyoDams/nodebb-plugin-ns-awards-recalbox",
   "library": "./plugin/index.js",
   "hooks": [
     {
