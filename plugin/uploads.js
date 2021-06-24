@@ -56,7 +56,7 @@
                 });
             };
 
-            if (plugins.hasListeners('filter:uploadImage')) {
+            if (plugins.hooks.hasListeners('filter:uploadImage')) {
                 storeCloud(req.file, req.user, saveDidComplete);
             } else {
                 storeLocal(req.file, saveDidComplete);
@@ -146,7 +146,7 @@
 
     function storeCloud(file, user, done) {
         var imageFile = Object.assign({}, file, {name: file.originalname});
-        plugins.fireHook('filter:uploadImage', {
+        plugins.hooks.fire('filter:uploadImage', {
             image: imageFile,
             uid  : user.uid
         }, function (error, image) {
