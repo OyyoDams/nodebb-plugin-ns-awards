@@ -14,7 +14,7 @@
       "method": "hooks.filters.navigation"
     },
     {
-      "hook": "filter:user.account",
+      "hook": "filter:helpers.getUserDataByUserSlug",
       "method": "hooks.filters.account"
     },
     {

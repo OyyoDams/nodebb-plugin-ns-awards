@@ -190,7 +190,7 @@
                 if (settings.maxRewardsPerAccount === 0) {
                     callback(null, account);
                 } else {
-                    Controller.getUserGrants(account.uid, settings.maxRewardsPerAccount, function (error, grants) {
+                    Controller.getUserGrants(account.theirid, settings.maxRewardsPerAccount, function (error, grants) {
                         if (error) {
                             return callback(error);
                         }
